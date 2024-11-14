@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Clima</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" data-aos="fade-up" data-aos-duration="1500">
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">Painel de Clima</h1>
+
+        <input type="text" id="city-input" placeholder="Digite o nome da cidade" data-aos="fade-up" data-aos-duration="1000">
+
+        <button id="search-btn" data-aos="flip-left" data-aos-duration="1000">Buscar Clima</button>
+
+        <div id="weather-info" class="weather-info" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <p id="city-name" data-aos="fade-in" data-aos-duration="1000"></p>
+            <img id="weather-icon" alt="Ícone do Clima" style="display: none;">
+            <p id="temperature" data-aos="fade-in" data-aos-duration="1000"></p>
+            <p id="description" data-aos="fade-in" data-aos-duration="1000"></p>
+        </div>
+
+        <div id="error-message" style="color: red; display: none;" data-aos="fade-in" data-aos-duration="1000">
+            Não foi possível obter os dados climáticos. Tente novamente.
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Inicializa o AOS
+    </script>
+</body>
+
+</html>

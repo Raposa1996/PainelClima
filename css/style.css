@@ -1,0 +1,129 @@
+                    /* Resetando margens e preenchimento */
+                    
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    /* Garantir que o HTML e o BODY ocupem 100% da tela */
+                    
+                    html,
+                    body {
+                        height: 100%;
+                        /* Garantir que ocupe toda a altura da tela */
+                        font-family: 'Arial', sans-serif;
+                    }
+                    /* Estilos gerais */
+                    
+                    body {
+                        background-image: url('https://wallpapers.com/images/hd/digital-art-weather-xqhs9axpy8btfd3y.jpg');
+                        background-size: cover;
+                        /* A imagem cobre toda a tela */
+                        background-position: center center;
+                        /* Centraliza a imagem */
+                        background-attachment: fixed;
+                        /* Mantém a imagem fixa durante o rolar */
+                        background-repeat: no-repeat;
+                        /* Evita repetição da imagem */
+                        color: white;
+                        /* Cor do texto branca para garantir contraste */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 100vh;
+                        /* Garante que o body tenha altura mínima de 100% da tela */
+                        padding: 0 15px;
+                    }
+                    /* Container para o conteúdo */
+                    
+                    .container {
+                        background-color: rgba(255, 255, 255, 0.8);
+                        /* Fundo semi-transparente */
+                        border-radius: 15px;
+                        padding: 25px;
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                        text-align: center;
+                        width: 100%;
+                        max-width: 350px;
+                        transition: transform 0.3s ease;
+                    }
+                    /* Animações e transições */
+                    
+                    .container:hover {
+                        transform: scale(1.05);
+                        /* Animação suave de aumento */
+                    }
+                    
+                    h1 {
+                        font-size: 2rem;
+                        color: #333;
+                        margin-bottom: 20px;
+                        font-weight: bold;
+                    }
+                    
+                    input {
+                        width: 80%;
+                        padding: 12px;
+                        margin: 10px 0;
+                        border-radius: 8px;
+                        border: 1px solid #ddd;
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+                    
+                    input:focus {
+                        outline: none;
+                        border-color: #4CAF50;
+                        box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+                    }
+                    
+                    button {
+                        padding: 12px 20px;
+                        border-radius: 8px;
+                        border: none;
+                        background-color: #28a745;
+                        color: white;
+                        font-size: 1.1rem;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease, transform 0.2s ease;
+                    }
+                    
+                    button:hover {
+                        background-color: #218838;
+                        transform: translateY(-2px);
+                    }
+                    
+                    #weather-info {
+                        display: none;
+                        /* Oculto até que os dados sejam carregados */
+                        background-color: rgba(0, 150, 136, 0.1);
+                        /* Fundo com leve transparência */
+                        padding: 20px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(0, 150, 136, 0.5);
+                        /* Borda verde suave */
+                        color: #004d40;
+                        /* Texto em verde escuro para legibilidade */
+                        font-size: 1.2em;
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                        /* Sombra para destaque */
+                        margin-top: 20px;
+                    }
+                    
+                    #weather-info p {
+                        margin: 8px 0;
+                    }
+                    
+                    #city-name {
+                        font-weight: bold;
+                        font-size: 1.4em;
+                        /* Maior destaque para o nome da cidade */
+                    }
+                    
+                    #temperature {
+                        font-size: 1.6em;
+                        /* Aumenta o destaque da temperatura */
+                        font-weight: bold;
+                        color: #00796b;
+                        /* Cor diferenciada para a temperatura */
+                    }
